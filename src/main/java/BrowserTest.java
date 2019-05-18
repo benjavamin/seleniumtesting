@@ -6,8 +6,10 @@ public class BrowserTest {
 
     public static void main(String[] args) {
 
-        WebDriver webDriver = new ChromeDriver();
+        String projectPath = System.getProperty("user.dir");
 
-        webDriver.get("http://google.ba");
+        System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\Chromedriver\\chromedriver.exe");
+        WebDriver webDriver = new ChromeDriver();
+        webDriver.get("http://warmane.com");
     }
 }
