@@ -1,15 +1,18 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class BrowserTest {
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
-        String projectPath = System.getProperty("user.dir");
-
-        System.setProperty("webdriver.chrome.driver", projectPath + "\\Drivers\\Chromedriver\\chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
         WebDriver webDriver = new ChromeDriver();
+
+
         webDriver.get("http://warmane.com");
+        Thread.sleep(3000);
+        webDriver.close();
     }
 }
