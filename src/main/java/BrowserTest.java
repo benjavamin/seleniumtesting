@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
+
 public class BrowserTest {
 
 
@@ -14,11 +16,14 @@ public class BrowserTest {
 
 
         webDriver.get("http://google.com");
+        webDriver.findElement(By.xpath("//input[@name='q']")).sendKeys("Automation testing! :)");
 
-        WebElement textBox = webDriver.findElement(By.name("q"));
-        WebElement submitButton = webDriver.findElement(By.name("btnK"));
-        textBox.sendKeys("Automation step by step");
-        submitButton.submit();
+        List<WebElement> listOfInputs = webDriver.findElements(By.xpath("//input"));
+
+        int count = listOfInputs.size();
+        System.out.println("Count of input elements: " + count);
+
+        webDriver.findElement(By.xpath("//input[@name='btnK'][@type='submit']")).submit();
         Thread.sleep(3000);
         webDriver.close();
     }
