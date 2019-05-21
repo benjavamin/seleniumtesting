@@ -1,23 +1,20 @@
-package test;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.sql.DriverManager;
+import java.sql.SQLOutput;
 
 public class Test1_GoogleSearch {
 
     public static void main(String[] args) throws InterruptedException {
-
-        googleSearch();
+        WebDriverManager.chromedriver().setup();
+        //googleSearch();
     }
 
     public static void googleSearch() throws InterruptedException {
 
-        WebDriverManager.chromedriver().setup(); //setup chromedriver for google chrome
+         //setup chromedriver for google chrome
         WebDriver driver = new ChromeDriver();
 
         driver.get("https://google.com"); //open google website
