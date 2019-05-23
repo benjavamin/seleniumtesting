@@ -3,14 +3,14 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class GoogleSearchPageObject {
+public class GoogleSearchPage {
 
     WebDriver driver = null;
 
     By textBoxSearch = By.name("q");
     By Btnsearch = By.xpath("//input[@name='btnK'][@type='submit']");
 
-    public GoogleSearchPageObject(WebDriver driver){
+    public GoogleSearchPage(WebDriver driver){
         this.driver = driver;
     }
 
