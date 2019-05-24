@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import pages.TeamoHomePage;
 import pages.TeamoLoginPage;
 
+import java.util.concurrent.TimeUnit;
+
 public class TeamoLoginPageTest {
 
     private static WebDriver driver = null;
@@ -28,7 +30,8 @@ public class TeamoLoginPageTest {
         teamoLoginPage.enterUsername("benjaminbajic@mail.com");
         teamoLoginPage.enterPassword("12345");
         teamoLoginPage.signIn();
-        
+        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         boolean pass = teamoHomePage.iconDisplayCheck();
 
         if (pass) {
