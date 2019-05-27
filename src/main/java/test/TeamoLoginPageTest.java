@@ -27,7 +27,6 @@ public class TeamoLoginPageTest {
     public static void teamoLoginTest() {
         TeamoLoginPage teamoLoginPage = new TeamoLoginPage(driver);
 
-
         driver.get("http://localhost:4200/login");
         teamoLoginPage.enterUsername("benjaminbajic@mail.com");
         teamoLoginPage.enterPassword("12345");
@@ -48,7 +47,7 @@ public class TeamoLoginPageTest {
         } else {
             System.out.println("Teamo Login Test: " + ANSI_RED + " FAIL");
         }
-        driver.close();
+        //driver.close();
 
     }
 }
