@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
 
 public class TeamoLoginPageTest {
 
-    private static WebDriver driver = null;
+    public static WebDriver driver = null;
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_RED = "\u001B[31m";
 

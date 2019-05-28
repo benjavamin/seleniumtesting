@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class TeamoUsersPage {
 
     WebDriver driver = null;
-    By createUsersBtnSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-list-user[1]/div[1]/button[1]");
+    By createUsersBtnSearch = By.xpath("//button[@class='mat-raised-button ng-star-inserted']");
 
     public TeamoUsersPage(WebDriver driver){
         this.driver = driver;

@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a6216f-26db-4631-a8bf-994a95d21bf4" name="Default Changelist" comment="teamo login test using Test NG">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java" afterDir="false" />
+    <list default="true" id="92a6216f-26db-4631-a8bf-994a95d21bf4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/TestNG.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/test/TeamoLoginPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TeamoLoginPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/pages/TeamoHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/TeamoHomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/test/TeamoLoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/TeamoLoginPageTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +43,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoLoginPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="225">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -54,12 +55,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+            <state relative-caret-position="120">
+              <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#599#600#0" expanded="true" />
-                <element signature="e#634#635#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,20 +67,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+            <state relative-caret-position="341">
+              <caret line="38" selection-start-line="38" selection-end-line="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -89,66 +79,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+            <state relative-caret-position="120">
+              <caret line="8" column="96" lean-forward="true" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="96" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#187#188#0" expanded="true" />
-                <element signature="e#223#224#0" expanded="true" />
-                <element signature="e#342#343#0" expanded="true" />
-                <element signature="e#358#359#0" expanded="true" />
-                <element signature="e#544#545#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="326">
-              <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#169#170#0" expanded="true" />
-                <element signature="e#205#206#0" expanded="true" />
-                <element signature="e#1393#1394#0" expanded="true" />
-                <element signature="e#1428#1429#0" expanded="true" />
-                <element signature="e#1341#1342#0" expanded="true" />
-                <element signature="e#1426#1427#0" expanded="true" />
-                <element signature="e#1460#1461#0" expanded="true" />
-                <element signature="e#1495#1496#0" expanded="true" />
-                <element signature="e#1575#1576#0" expanded="true" />
-                <element signature="e#1610#1611#0" expanded="true" />
-                <element signature="e#1841#1842#0" expanded="true" />
-                <element signature="e#1876#1877#0" expanded="true" />
-                <element signature="e#1986#1987#0" expanded="true" />
-                <element signature="e#2065#2066#0" expanded="true" />
-                <element signature="e#2100#2101#0" expanded="true" />
-                <element signature="e#2148#2149#0" expanded="true" />
-                <element signature="e#2185#2186#0" expanded="true" />
-                <element signature="e#2219#2220#0" expanded="true" />
-                <element signature="e#2294#2295#0" expanded="true" />
-                <element signature="e#2323#2324#0" expanded="true" />
-                <element signature="e#2378#2379#0" expanded="true" />
-                <element signature="e#2400#2401#0" expanded="true" />
-                <element signature="e#2481#2482#0" expanded="true" />
-                <element signature="e#2502#2503#0" expanded="true" />
+                <element signature="e#437#438#0" expanded="true" />
+                <element signature="e#501#502#0" expanded="true" />
+                <element signature="e#545#546#0" expanded="true" />
+                <element signature="e#622#623#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="193">
-              <caret line="34" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="87">
+              <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1454#1455#0" expanded="true" />
-                <element signature="e#1484#1485#0" expanded="true" />
+                <element signature="e#1676#1677#0" expanded="true" />
+                <element signature="e#1751#1752#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="45" column="66" lean-forward="true" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1594#1595#0" expanded="true" />
+                <element signature="e#1624#1625#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -157,8 +123,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+            <state relative-caret-position="206">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -178,6 +144,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestNG.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -185,6 +160,7 @@
       <list>
         <option value="Enum" />
         <option value="Class" />
+        <option value="TestNG" />
       </list>
     </option>
   </component>
@@ -208,14 +184,17 @@
         <option value="$PROJECT_DIR$/src/main/java/pages/GoogleSearchPageObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/GoogleSearchPageTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/pages/TeamoLoginPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/testng.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/TestNG.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java" />
+        <option value="$PROJECT_DIR$/TestNG.xml" />
         <option value="$PROJECT_DIR$/src/main/java/test/TeamoLoginPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" />
       </list>
     </option>
   </component>
@@ -238,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -289,11 +267,12 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558960287697" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559045802440" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -308,6 +287,7 @@
       <recent name="test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pragmatio\Desktop\seleniumtesting" />
       <recent name="C:\Users\Pragmatio\Desktop\seleniumtesting\src\main\java\test" />
       <recent name="C:\Users\Pragmatio\Desktop\seleniumtesting\src\main\java" />
     </key>
@@ -324,14 +304,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TeamoCreateUserTest">
-    <configuration name="BrowserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BrowserTest" />
-      <module name="SeleniumFramework" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml">
     <configuration name="GoogleSearchPageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.GoogleSearchPageTest" />
       <module name="SeleniumFramework" />
@@ -380,6 +353,16 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumFramework" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/TestNG.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -436,11 +419,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" />
         <item itemvalue="Application.TeamoLoginPageTest" />
         <item itemvalue="Application.GoogleSearchPageTest" />
         <item itemvalue="Application.GoogleSearchTest" />
         <item itemvalue="Application.Test1_GoogleSearch" />
-        <item itemvalue="Application.BrowserTest" />
       </list>
     </recent_temporary>
   </component>
@@ -518,41 +501,54 @@
       <option name="project" value="LOCAL" />
       <updated>1558702214296</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Attempt at creating multiple tests at once">
+      <created>1558960656144</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558960656145</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TeamoLoginPageTest - 2019.05.24 at 14h 46m 28s.xml">
-      <configuration name="TeamoLoginPageTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 10h 35m 47s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoLoginPageTest - 2019.05.27 at 13h 09m 18s.xml">
-      <configuration name="TeamoLoginPageTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 10h 36m 34s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoCreateUserTest - 2019.05.27 at 14h 23m 03s.xml">
-      <configuration name="TeamoCreateUserTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 10h 59m 09s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoCreateUserTest - 2019.05.27 at 14h 23m 38s.xml">
-      <configuration name="TeamoCreateUserTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 18m 21s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoCreateUserTest - 2019.05.27 at 14h 26m 04s.xml">
-      <configuration name="TeamoCreateUserTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 19m 14s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoCreateUserTest - 2019.05.27 at 14h 28m 34s.xml">
-      <configuration name="TeamoCreateUserTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 20m 11s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoCreateUserTest - 2019.05.27 at 14h 29m 24s.xml">
-      <configuration name="TeamoCreateUserTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 22m 49s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TeamoCreateUserTest - 2019.05.27 at 14h 30m 03s.xml">
-      <configuration name="TeamoCreateUserTest" configurationId="TestNG" />
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 25m 29s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 27m 06s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_Pragmatio_Desktop_seleniumtesting_TestNG_xml - 2019.05.28 at 13h 31m 24s.xml">
+      <configuration name="C:/Users/Pragmatio/Desktop/seleniumtesting/TestNG.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-121" y="-1088" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13951011" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49840763" visible="true" weight="0.14164004" />
+      <window_info id="Structure" order="1" sideWeight="0.50159234" side_tool="true" visible="true" weight="0.14164004" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -560,7 +556,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32181427" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32181427" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -588,7 +584,8 @@
     <MESSAGE value="page object model" />
     <MESSAGE value="teamo login test" />
     <MESSAGE value="teamo login test using Test NG" />
-    <option name="LAST_COMMIT_MESSAGE" value="teamo login test using Test NG" />
+    <MESSAGE value="Attempt at creating multiple tests at once" />
+    <option name="LAST_COMMIT_MESSAGE" value="Attempt at creating multiple tests at once" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -624,82 +621,10 @@
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#599#600#0" expanded="true" />
-            <element signature="e#634#635#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#187#188#0" expanded="true" />
-            <element signature="e#223#224#0" expanded="true" />
-            <element signature="e#342#343#0" expanded="true" />
-            <element signature="e#358#359#0" expanded="true" />
-            <element signature="e#544#545#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="326">
-          <caret line="24" column="70" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#169#170#0" expanded="true" />
-            <element signature="e#205#206#0" expanded="true" />
-            <element signature="e#1393#1394#0" expanded="true" />
-            <element signature="e#1428#1429#0" expanded="true" />
-            <element signature="e#1341#1342#0" expanded="true" />
-            <element signature="e#1426#1427#0" expanded="true" />
-            <element signature="e#1460#1461#0" expanded="true" />
-            <element signature="e#1495#1496#0" expanded="true" />
-            <element signature="e#1575#1576#0" expanded="true" />
-            <element signature="e#1610#1611#0" expanded="true" />
-            <element signature="e#1841#1842#0" expanded="true" />
-            <element signature="e#1876#1877#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-            <element signature="e#2065#2066#0" expanded="true" />
-            <element signature="e#2100#2101#0" expanded="true" />
-            <element signature="e#2148#2149#0" expanded="true" />
-            <element signature="e#2185#2186#0" expanded="true" />
-            <element signature="e#2219#2220#0" expanded="true" />
-            <element signature="e#2294#2295#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-            <element signature="e#2378#2379#0" expanded="true" />
-            <element signature="e#2400#2401#0" expanded="true" />
-            <element signature="e#2481#2482#0" expanded="true" />
-            <element signature="e#2502#2503#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoLoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -713,10 +638,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="60" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoLoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="32" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestNG.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoUsersPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="45" column="10" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
+        <state relative-caret-position="206">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -725,8 +677,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoHomePageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="43" column="10" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
+        <state relative-caret-position="341">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -735,22 +687,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoLoginPageTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="225">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="120">
+          <caret line="8" column="96" lean-forward="true" selection-start-line="8" selection-start-column="96" selection-end-line="8" selection-end-column="96" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1454#1455#0" expanded="true" />
-            <element signature="e#1484#1485#0" expanded="true" />
+            <element signature="e#437#438#0" expanded="true" />
+            <element signature="e#501#502#0" expanded="true" />
+            <element signature="e#545#546#0" expanded="true" />
+            <element signature="e#622#623#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="45" column="66" lean-forward="true" selection-start-line="45" selection-start-column="66" selection-end-line="45" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1624#1625#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1676#1677#0" expanded="true" />
+            <element signature="e#1751#1752#0" expanded="true" />
           </folding>
         </state>
       </provider>

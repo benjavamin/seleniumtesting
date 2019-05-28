@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 public class TeamoHomePage {
     WebDriver driver = null;
     By iconSearch = By.xpath("//mat-icon[text()='account_circle']");
-    By userMenuItemSearch = By.xpath("//span[text()='Users'");
+    By userMenuItemSearch = By.xpath("//span[text()='Users']");
 
 
 

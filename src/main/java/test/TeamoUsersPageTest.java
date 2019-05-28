@@ -1,28 +1,26 @@
 package test;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.CreateNewUserPage;
 import pages.TeamoUsersPage;
 
 import java.util.concurrent.TimeUnit;
 
+import static test.TeamoLoginPageTest.driver;
+
 public class TeamoUsersPageTest {
 
-    private static WebDriver driver = null;
+    //private static WebDriver driver = null;
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_RED = "\u001B[31m";
 
 
-    @BeforeTest
+    /*@BeforeTest
     public void SetUpTest(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-    }
+    }*/
 
     @Test
     public static void clickCreateButton(){

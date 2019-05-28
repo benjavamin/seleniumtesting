@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNG Suite">
+    <test name="Teamo add item" thread-count="1" parallel="false">
+        <classes>
+            <class name="test.TeamoLoginPageTest"/>
+            <class name="test.TeamoHomePageTest"/>
+            <class name="test.TeamoUsersPageTest"/>
+            <class name="test.TeamoCreateUserTest"/>
+        </classes>
+    </test>
+</suite>
