@@ -7,16 +7,16 @@ public class TeamoHomePage {
     WebDriver driver = null;
     By iconSearch = By.xpath("//mat-icon[text()='account_circle']");
     By userMenuItemSearch = By.xpath("//span[text()='Users']");
-
+    By changeLogSearch = By.xpath("//h1[contains(text()='Changelog')]");
 
 
     public TeamoHomePage(WebDriver driver) {
         this.driver = driver;
     }
 
-    public boolean iconDisplayCheck(){
+    public boolean changelogDisplayCheck(){
         try {
-            return driver.findElement(iconSearch).isDisplayed();
+            return driver.findElement(changeLogSearch).isDisplayed();
         } catch (Exception ex) {
             return false;
         }

@@ -3,6 +3,7 @@ package test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pages.CreateNewUserPage;
+import pages.TeamoHomePage;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -24,9 +25,7 @@ public class TeamoCreateUserTest {
     @Test
     public void createUser(){
         CreateNewUserPage createNewUserPage = new CreateNewUserPage(driver);
-        //TeamoLoginPageTest.teamoLoginTest();
-        //TeamoHomePageTest.clickUsers();
-
+        TeamoHomePage teamoHomePage = new TeamoHomePage(driver);
         Random r = new Random();
         String generatedMail = "testing" + ((char)r.nextInt(255)) + "@mail.com";
         createNewUserPage.enterEmail(generatedMail);
@@ -34,12 +33,20 @@ public class TeamoCreateUserTest {
         createNewUserPage.enterLastName("Testing");
         createNewUserPage.enterPassword("12345");
         createNewUserPage.expandRolesSection();
+        createNewUserPage.openRoleSelect();
         createNewUserPage.selectRole();
         createNewUserPage.selectOrganisation();
         createNewUserPage.clickAddRoleBtn();
         createNewUserPage.clickCreateBtn();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+        boolean pass = teamoHomePage.changelogDisplayCheck();
+
+        if (pass){
+            System.out.println("Create user: SUCCESS");
+        } else {
+            System.out.println("Create user: FAIL");
+        }
 
     }
 

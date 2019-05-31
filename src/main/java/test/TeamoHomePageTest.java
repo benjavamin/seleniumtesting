@@ -1,9 +1,7 @@
 package test;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pages.TeamoHomePage;
-import pages.TeamoUsersPage;
 
 import java.util.concurrent.TimeUnit;
 
@@ -29,7 +27,7 @@ public class TeamoHomePageTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @AfterTest
+    /*@AfterTest
     public void tearDownTest(){
         TeamoUsersPage teamoUsersPage = new TeamoUsersPage(driver);
         boolean pass = teamoUsersPage.createBtnIsDisplayed();
@@ -39,6 +37,6 @@ public class TeamoHomePageTest {
         } else {
             System.out.println("Teamo Open Users Page: " + ANSI_RED + "FAIL");
         }
-        //driver.close();
-    }
+        driver.close();
+    }*/
 }

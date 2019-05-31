@@ -1,8 +1,6 @@
 package test;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
-import pages.CreateNewUserPage;
 import pages.TeamoUsersPage;
 
 import java.util.concurrent.TimeUnit;
@@ -30,7 +28,7 @@ public class TeamoUsersPageTest {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
-    @AfterTest
+    /*@AfterTest
     public void tearDownTest(){
         CreateNewUserPage createNewUserPage = new CreateNewUserPage(driver);
         boolean pass = createNewUserPage.formIsDisplayed();
@@ -41,6 +39,6 @@ public class TeamoUsersPageTest {
             System.out.println("Teamo New User Form Test: " + ANSI_RED + "FAIL");
         }
 
-        //driver.close();
-    }
+        driver.close();
+    }*/
 }

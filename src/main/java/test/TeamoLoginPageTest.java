@@ -3,7 +3,6 @@ package test;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import pages.TeamoHomePage;
@@ -26,18 +25,24 @@ public class TeamoLoginPageTest {
     @Test
     public static void teamoLoginTest() {
         TeamoLoginPage teamoLoginPage = new TeamoLoginPage(driver);
-
+        TeamoHomePage teamoHomePage = new TeamoHomePage(driver);
         driver.get("http://localhost:4200/login");
         teamoLoginPage.enterUsername("benjaminbajic@mail.com");
         teamoLoginPage.enterPassword("12345");
         teamoLoginPage.signIn();
         driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        boolean pass = teamoHomePage.changelogDisplayCheck();
 
+        if (pass) {
+            System.out.println("Login Test: SUCCESS");
+        } else {
+            System.out.println("Login Test: FAIL");
+        }
 
     }
 
-    @AfterTest
+    /*@AfterTest
     public void tearDownTest() {
 
         TeamoHomePage teamoHomePage = new TeamoHomePage(driver);
@@ -47,7 +52,7 @@ public class TeamoLoginPageTest {
         } else {
             System.out.println("Teamo Login Test: " + ANSI_RED + " FAIL");
         }
-        //driver.close();
+        driver.close();
 
-    }
+    }*/
 }
