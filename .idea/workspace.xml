@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="92a6216f-26db-4631-a8bf-994a95d21bf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/SeleniumFramework.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/GoogleSearchPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/TeamoHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/GoogleSearchPageTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SeleniumFramework-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/SeleniumFramework-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SeleniumFramework.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/GoogleSearchPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pages/TeamoHomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pages/TeamoHomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/GoogleSearchPageTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/test/TeamoLoginPageTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/test/TeamoLoginPageTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Test1_GoogleSearch.class" beforeDir="false" />
-    </list>
+    <list default="true" id="92a6216f-26db-4631-a8bf-994a95d21bf4" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -80,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="965">
-              <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+              <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#enterPassword#0;class#CreateNewUserPage#0" />
@@ -89,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/pages/TeamoUsersPage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -125,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
+            <state relative-caret-position="172">
+              <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -452,7 +431,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558193951985</updated>
-      <workItem from="1559586772135" duration="2571000" />
+      <workItem from="1559586772135" duration="2810000" />
     </task>
     <task id="LOCAL-00001" summary="Added chrome driver and set driver property">
       <created>1558210783455</created>
@@ -531,19 +510,17 @@
       <option name="project" value="LOCAL" />
       <updated>1559045821406</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Created 2 teamo automated tests">
+      <created>1559589580103</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1559589580103</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 20h 47m 18s.xml">
-      <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 20h 50m 19s.xml">
-      <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 20h 51m 33s.xml">
-      <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 20h 57m 26s.xml">
       <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
     </history-entry>
@@ -565,9 +542,18 @@
     <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 21h 13m 41s.xml">
       <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 21h 16m 40s.xml">
+      <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 21h 18m 03s.xml">
+      <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="C__Users_benjo_Documents_SeleniumFramework_TestNG_xml - 2019.06.03 at 21h 18m 46s.xml">
+      <configuration name="C:/Users/benjo/Documents/SeleniumFramework/TestNG.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5608000" />
+    <option name="totallyTimeSpent" value="5847000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,9 +566,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49203822" visible="true" weight="0.17776097" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49203822" visible="true" weight="0.17776097" />
       <window_info id="Structure" order="1" sideWeight="0.5079618" side_tool="true" weight="0.14696486" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -593,12 +578,12 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" x="22" y="266" width="1322" height="196" id="Run" order="2" visible="true" weight="0.3207856" />
+      <window_info anchor="bottom" x="22" y="266" width="1322" height="196" id="Run" order="2" weight="0.3207856" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3289689" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32569557" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.2487725" />
@@ -627,7 +612,8 @@
     <MESSAGE value="teamo login test using Test NG" />
     <MESSAGE value="Attempt at creating multiple tests at once" />
     <MESSAGE value="Created testng xml file" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created testng xml file" />
+    <MESSAGE value="Created 2 teamo automated tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created 2 teamo automated tests" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="editorHistoryManager">
@@ -735,10 +721,20 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/pages/CreateNewUserPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="965">
-          <caret line="89" column="26" selection-start-line="89" selection-start-column="26" selection-end-line="89" selection-end-column="26" />
+          <caret line="87" column="26" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#enterPassword#0;class#CreateNewUserPage#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="43" column="61" selection-start-line="43" selection-start-column="61" selection-end-line="43" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -747,16 +743,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="93" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="93" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/test/TeamoCreateUserTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="44" column="61" selection-start-line="44" selection-start-column="61" selection-end-line="44" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
