@@ -3,7 +3,7 @@ package test;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import pages.CreateNewUserPage;
-import pages.TeamoHomePage;
+import pages.TeamoUsersPage;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
@@ -25,7 +25,7 @@ public class TeamoCreateUserTest {
     @Test
     public void createUser(){
         CreateNewUserPage createNewUserPage = new CreateNewUserPage(driver);
-        TeamoHomePage teamoHomePage = new TeamoHomePage(driver);
+        TeamoUsersPage teamoUsersPage = new TeamoUsersPage(driver);
         Random r = new Random();
         String generatedMail = "testing" + ((char)r.nextInt(255)) + "@mail.com";
         createNewUserPage.enterEmail(generatedMail);
@@ -35,12 +35,13 @@ public class TeamoCreateUserTest {
         createNewUserPage.expandRolesSection();
         createNewUserPage.openRoleSelect();
         createNewUserPage.selectRole();
+        createNewUserPage.openOrgSelect();
         createNewUserPage.selectOrganisation();
         createNewUserPage.clickAddRoleBtn();
         createNewUserPage.clickCreateBtn();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-        boolean pass = teamoHomePage.changelogDisplayCheck();
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
+        boolean pass = teamoUsersPage.createBtnIsDisplayed();
 
         if (pass){
             System.out.println("Create user: SUCCESS");
@@ -53,6 +54,7 @@ public class TeamoCreateUserTest {
     @AfterTest
     public void tearDownTest(){
         driver.close();
+        driver.quit();
     }
 
 }

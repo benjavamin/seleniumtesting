@@ -1,8 +1,11 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
@@ -16,6 +19,7 @@ public class CreateNewUserPage {
     By rolesSectionSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-expansion-panel[1]/mat-expansion-panel-header[1]");
     By rolesDropDownFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-expansion-panel[1]/div[1]/div[1]/form[1]/p[1]/mat-form-field[1]/div[1]/div[1]/div[1]");
     By firstRole = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/mat-option[1]/span[1]");
+    By firstOrgSearch = By.xpath("//span[contains(text(),'Pragmatio solutions')]");
     By orgDropDownFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-expansion-panel[1]/div[1]/div[1]/form[1]/p[2]/mat-form-field[1]/div[1]/div[1]");
     By addRoleBtnSearch = By.xpath("//mat-icon[text()='control_point']");
     By createBtnSearch = By.xpath("//text()[.='Create']/ancestor::button[1]");
@@ -46,8 +50,11 @@ public class CreateNewUserPage {
     }
 
     public void expandRolesSection(){
-        driver.findElement(rolesSectionSearch).click();
-        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
+        WebElement rolesSection = driver.findElement(rolesSectionSearch);
+        JavascriptExecutor jse = (JavascriptExecutor) driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);", rolesSection);
+        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        rolesSection.click();
     }
 
     public void openRoleSelect(){
@@ -58,12 +65,16 @@ public class CreateNewUserPage {
         driver.findElement(firstRole).click();
     }
 
-    public Select getOrgSelect(){
-        return new Select(driver.findElement(orgDropDownFieldSearch));
+    public void openOrgSelect(){
+        driver.findElement(orgDropDownFieldSearch).click();
+        driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
     }
 
     public void selectOrganisation(){
-        getOrgSelect().selectByIndex(0);
+        WebElement firstOrg;
+        WebDriverWait wait = new WebDriverWait(driver, 5);
+        firstOrg = wait.until(ExpectedConditions.elementToBeClickable(firstOrgSearch));
+        firstOrg.click();
     }
 
     public void clickAddRoleBtn(){
@@ -71,6 +82,9 @@ public class CreateNewUserPage {
     }
 
     public void clickCreateBtn(){
-        driver.findElement(createBtnSearch).click();
+        WebElement createBtn = driver.findElement(createBtnSearch);
+        JavascriptExecutor jse = (JavascriptExecutor)driver;
+        jse.executeScript("arguments[0].scrollIntoView(true);",createBtn);
+        createBtn.click();
     }
 }

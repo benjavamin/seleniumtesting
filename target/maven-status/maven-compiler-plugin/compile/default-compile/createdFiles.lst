@@ -1,1 +1,9 @@
+pages\TeamoUsersPage.class
+test\TeamoHomePageTest.class
+pages\TeamoHomePage.class
+test\TeamoUsersPageTest.class
 BrowserTest.class
+pages\CreateNewUserPage.class
+test\TeamoCreateUserTest.class
+test\TeamoLoginPageTest.class
+pages\TeamoLoginPage.class
