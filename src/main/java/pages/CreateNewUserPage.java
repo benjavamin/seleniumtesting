@@ -9,9 +9,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.concurrent.TimeUnit;
 
-public class CreateNewUserPage {
+public class CreateNewUserPage extends BasePage{
 
-    WebDriver driver = null;
     By emailTextFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/p[2]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]");
     By nameTextFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/p[3]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]");
     By lastNameTextFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/p[4]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]");
@@ -25,11 +24,7 @@ public class CreateNewUserPage {
     By createBtnSearch = By.xpath("//text()[.='Create']/ancestor::button[1]");
 
     public CreateNewUserPage(WebDriver driver){
-        this.driver = driver;
-    }
-
-    public boolean formIsDisplayed(){
-        return driver.findElement(emailTextFieldSearch).isDisplayed();
+        super(driver);
     }
 
     public void enterEmail(String input){
@@ -50,11 +45,8 @@ public class CreateNewUserPage {
     }
 
     public void expandRolesSection(){
-        WebElement rolesSection = driver.findElement(rolesSectionSearch);
-        JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);", rolesSection);
-        //driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-        rolesSection.click();
+        scrollToElement(rolesSectionSearch);
+        click(rolesSectionSearch);
     }
 
     public void openRoleSelect(){
