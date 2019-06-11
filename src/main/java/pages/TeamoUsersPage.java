@@ -3,17 +3,16 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class TeamoUsersPage {
+public class TeamoUsersPage extends BasePage{
 
-    WebDriver driver = null;
     By createUsersBtnSearch = By.xpath("//button[@class='mat-raised-button ng-star-inserted']");
 
     public TeamoUsersPage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
     }
 
     public void clickCreateUserBtn(){
-        driver.findElement(createUsersBtnSearch).click();
+        click(createUsersBtnSearch);
     }
 
     public boolean createBtnIsDisplayed(){

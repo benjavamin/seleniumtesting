@@ -30,6 +30,11 @@ public class BasePage {
         wait.until(ExpectedConditions.not(ExpectedConditions.textToBe(locator, text)));
     }
 
+    protected void clearText(By locator){
+        waitForElementToAppear(locator);
+        driver.findElement(locator).clear();
+    }
+
     protected void scrollToElement(By locator){
         JavascriptExecutor jse = (JavascriptExecutor) driver;
         jse.executeScript("arguments[0].scrollIntoView(true);", locator);

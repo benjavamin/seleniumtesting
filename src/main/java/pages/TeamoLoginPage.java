@@ -3,28 +3,26 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
-public class TeamoLoginPage {
-
-    WebDriver driver = null;
+public class TeamoLoginPage extends BasePage{
 
     By usernameTextBoxSearch = By.id("username-input-field");
     By pwTextBoxSearch = By.id("mat-input-1");
-    By SignInBtnSearch = By.id("sign-in-button");
+    By signInBtnSearch = By.id("sign-in-button");
 
     public TeamoLoginPage(WebDriver driver){
-        this.driver = driver;
+        super(driver);
     }
 
     public void enterUsername(String input){
-        driver.findElement(usernameTextBoxSearch).sendKeys(input);
+        writeText(usernameTextBoxSearch, input);
     }
 
     public void enterPassword(String input){
-        driver.findElement(pwTextBoxSearch).sendKeys(input);
+        writeText(pwTextBoxSearch, input);
     }
 
     public void signIn(){
-        driver.findElement(SignInBtnSearch).click();
+        click(signInBtnSearch);
     }
 
 
