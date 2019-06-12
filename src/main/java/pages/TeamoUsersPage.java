@@ -15,9 +15,9 @@ public class TeamoUsersPage extends BasePage{
         click(createUsersBtnSearch);
     }
 
-    public boolean createBtnIsDisplayed(){
+    /*public boolean createBtnIsDisplayed(){
         return driver.findElement(createUsersBtnSearch).isDisplayed();
-    }
+    }*/
 
 
 }

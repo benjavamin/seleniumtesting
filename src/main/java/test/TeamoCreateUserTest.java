@@ -10,17 +10,11 @@ import java.util.concurrent.TimeUnit;
 
 import static test.TeamoLoginPageTest.driver;
 
-public class TeamoCreateUserTest {
+public class TeamoCreateUserTest extends BaseTest{
 
-    //private static WebDriver driver = null;
     public static final String ANSI_GREEN = "\u001B[32m";
     public static final String ANSI_RED = "\u001B[31m";
 
-    /*@BeforeTest
-    public void setUpTest(){
-        WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
-    }*/
 
     @Test
     public void createUser(){
@@ -41,20 +35,8 @@ public class TeamoCreateUserTest {
         createNewUserPage.clickCreateBtn();
         driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(15, TimeUnit.SECONDS);
-        boolean pass = teamoUsersPage.createBtnIsDisplayed();
-
-        if (pass){
-            System.out.println("Create user: SUCCESS");
-        } else {
-            System.out.println("Create user: FAIL");
-        }
 
     }
 
-    @AfterTest
-    public void tearDownTest(){
-        driver.close();
-        driver.quit();
-    }
 
 }
