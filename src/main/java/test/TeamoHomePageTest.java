@@ -20,5 +20,5 @@ public class TeamoHomePageTest {
         driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
-    
+
 }
