@@ -1,6 +1,6 @@
 package test;
 
-import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterSuite;
@@ -12,8 +12,8 @@ public class BaseTest {
 
     @BeforeSuite
     public void beforeSuite(){
+        WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-        ChromeDriverManager.chromedriver().setup();
         driver.manage().window().maximize();
     }
 

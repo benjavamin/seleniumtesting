@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -36,8 +37,9 @@ public class BasePage {
     }
 
     protected void scrollToElement(By locator){
+        WebElement element = driver.findElement(locator);
         JavascriptExecutor jse = (JavascriptExecutor) driver;
-        jse.executeScript("arguments[0].scrollIntoView(true);", locator);
+        jse.executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
     protected void click(By locator){
@@ -46,6 +48,7 @@ public class BasePage {
     }
 
     protected void writeText(By locator, String text){
+        clearText(locator);
         waitForElementToAppear(locator);
         driver.findElement(locator).sendKeys(text);
     }

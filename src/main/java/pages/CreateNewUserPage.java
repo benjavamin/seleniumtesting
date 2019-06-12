@@ -3,6 +3,8 @@ package pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+import java.util.Random;
+
 public class CreateNewUserPage extends BasePage{
 
     By emailTextFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/p[2]/mat-form-field[1]/div[1]/div[1]/div[1]/input[1]");
@@ -23,6 +25,12 @@ public class CreateNewUserPage extends BasePage{
 
     public void enterEmail(String input){
         writeText(emailTextFieldSearch, input);
+    }
+
+    public void enterEmail(){
+        Random r = new Random();
+        String generatedMail = "testing" + ((char)r.nextInt(255)) + "@mail.com";
+        writeText(emailTextFieldSearch, generatedMail);
     }
 
     public void enterName(String input){
