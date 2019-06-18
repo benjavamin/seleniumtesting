@@ -48,8 +48,8 @@ public class BasePage {
     }
 
     protected void writeText(By locator, String text){
-        clearText(locator);
         waitForElementToAppear(locator);
+        clearText(locator);
         driver.findElement(locator).sendKeys(text);
     }
 

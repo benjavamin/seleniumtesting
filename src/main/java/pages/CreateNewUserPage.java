@@ -14,7 +14,7 @@ public class CreateNewUserPage extends BasePage{
     By rolesSectionSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-expansion-panel[1]/mat-expansion-panel-header[1]");
     By rolesDropDownFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-expansion-panel[1]/div[1]/div[1]/form[1]/p[1]/mat-form-field[1]/div[1]/div[1]/div[1]");
     By firstRoleSearch = By.xpath("/html[1]/body[1]/div[2]/div[2]/div[1]/div[1]/mat-option[1]/span[1]");
-    By firstOrgSearch = By.xpath("//span[contains(text(),'Pragmatio solutions')]");
+    By firstOrgSearch = By.xpath("//span[contains(text(),'Pragmatio')]");
     By orgDropDownFieldSearch = By.xpath("/html[1]/body[1]/teamo-root[1]/div[1]/mat-sidenav-container[1]/mat-sidenav-content[1]/div[2]/teamo-create-user[1]/div[1]/mat-card[1]/mat-card-content[1]/form[1]/mat-expansion-panel[1]/div[1]/div[1]/form[1]/p[2]/mat-form-field[1]/div[1]/div[1]");
     By addRoleBtnSearch = By.xpath("//mat-icon[text()='control_point']");
     By createBtnSearch = By.xpath("//text()[.='Create']/ancestor::button[1]");

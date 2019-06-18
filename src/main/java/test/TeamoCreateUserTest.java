@@ -14,6 +14,7 @@ public class TeamoCreateUserTest extends BaseTest{
 
     @Test
     public void createUser(){
+
         TeamoLoginPage teamoLoginPage = new TeamoLoginPage(getDriver());
         TeamoHomePage teamoHomePage = new TeamoHomePage(getDriver());
         TeamoUsersPage teamoUsersPage = new TeamoUsersPage(getDriver());
@@ -26,11 +27,10 @@ public class TeamoCreateUserTest extends BaseTest{
 
         teamoHomePage.clickUserMenuItem();
 
-
         teamoUsersPage.clickCreateUserBtn();
 
         createNewUserPage.enterEmail();
-        createNewUserPage.enterName("Automated");
+        createNewUserPage.enterName("Automation");
         createNewUserPage.enterLastName("Testing");
         createNewUserPage.enterPassword("12345");
         createNewUserPage.expandRolesSection();
